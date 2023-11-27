@@ -7,16 +7,16 @@ spec:
   project: default
 
   source:
-    repoURL: https://git..
+    repoURL: https://github.com/dimkaprodimka/argotest.git
     targetRevision: HEAD
-    path: dev..
+    path: dev
 
   destination:
     server: https://kubernetes.default.svc
     namespace: myapp
 
   syncPolicy:
-    syncOption:
+    syncOptions:
     - CreateNamespace=true
 
     automated:
