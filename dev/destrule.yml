@@ -1,0 +1,12 @@
+kind: DestinationRule
+apiVersion: networking.istio.io/v1alpha3
+metadata:
+  name: dace-s
+  namespace: dace
+spec:
+  host: dace-s
+  subsets:
+    - labels:
+        version: v1
+      name: v1
+   

@@ -1,22 +1,23 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nginx-dep
+  name: dace-d
   labels:
-    app: nginx-app
+    app: dace
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: nginx-app
+      app: dace
   template:
     metadata:
       labels:
-        app: nginx-app
+        app: dace
+        version: v1
     spec:
       containers:
-      - name: nginx
-        image: nginx:1.25.3
+      - name: dace
+        image: dimkapro/dace:latest
         ports:
-        - containerPort: 80
-          name: http-web-svc
+        - containerPort: 6878
+          name: tv
