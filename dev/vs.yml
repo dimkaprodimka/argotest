@@ -13,7 +13,7 @@ spec:
       - uri :
           prefix: "/v1"
       rewrite:
-          uri: /
+          uri: /ace/
       route:
       - destination:
           host: dace-s
