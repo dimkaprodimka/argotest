@@ -1,0 +1,19 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  name: dace-s
+  # namespace: dace
+spec:
+  hosts:      
+    - "*"
+  gateways:
+    - my-gateway
+  tcp:
+  - match:
+    - port: 6878
+    route:
+    - destination:
+        host: dace-s
+        port:
+          number: 6878
+    

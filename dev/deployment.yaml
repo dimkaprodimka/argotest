@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: dace-d
+  name: dace
   labels:
     app: dace
 spec:
