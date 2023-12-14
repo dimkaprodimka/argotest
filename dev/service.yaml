@@ -9,5 +9,5 @@ spec:
   ports:
   - name: tv
     protocol: TCP
-    port: 6878
+    port: 8080
     targetPort: tv

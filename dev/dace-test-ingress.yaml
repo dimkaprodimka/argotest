@@ -11,14 +11,14 @@ spec:
             service:
               name: dace-s
               port:
-                number: 6878
+                number: 8080
           path: /webui
           pathType: Prefix
         - backend:
             service:
               name: dace-s
               port:
-                number: 6878
+                number: 8080
           path: /get
           pathType: Prefix
 
