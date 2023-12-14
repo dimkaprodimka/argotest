@@ -1,0 +1,30 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: dace-test-ingress
+spec:
+  ingressClassName: traefik
+  rules:
+    - http:
+        paths:
+        - backend:
+            service:
+              name: dace-s
+              port:
+                number: 6878
+          path: /webui
+          pathType: Prefix
+        - backend:
+            service:
+              name: dace-s
+              port:
+                number: 6878
+          path: /get
+          pathType: Prefix
+
+
+
+
+
+
+
