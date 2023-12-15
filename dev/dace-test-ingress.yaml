@@ -21,6 +21,13 @@ spec:
                 number: 8080
           path: /ace
           pathType: Prefix
+        - backend:
+            service:
+              name: dace-s
+              port:
+                number: 8080
+          path: /content
+          pathType: Prefix
 
 
 
