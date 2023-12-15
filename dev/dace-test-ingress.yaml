@@ -19,7 +19,7 @@ spec:
               name: dace-s
               port:
                 number: 8080
-          path: /get
+          path: /ace
           pathType: Prefix
 
 
