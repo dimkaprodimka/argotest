@@ -1,0 +1,15 @@
+apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRoute
+metadata:
+  name: dace-svc
+  namespace: dace-test
+spec:
+  entryPoints:
+  - web2
+  routes:
+  - kind: Rule
+    match: Host(`di-dev.pl`)
+    priority: 10
+    services:
+    - name: dace-s
+      port: 8080
