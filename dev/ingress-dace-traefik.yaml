@@ -8,8 +8,10 @@ spec:
   - web2
   routes:
   - kind: Rule
-    match: Host(`di-dev.pl`)
+    match: Host(`didev.pl`)
     priority: 10
     services:
     - name: dace-s
       port: 8080
+  tls:
+    secretName: di-dev
