@@ -5,7 +5,7 @@ metadata:
   labels:
     app: dace
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: dace
@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: dace
-        image: dimkapro/dace:latest-16
+        image: dimkapro/dace:latest-20
         ports:
         - containerPort: 8080
           name: tv
