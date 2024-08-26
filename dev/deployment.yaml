@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: dace
-        image: dimkapro/dace:latest-23
+        image: dimkapro/dace:latest-24
         ports:
         - containerPort: 8080
           name: tv
