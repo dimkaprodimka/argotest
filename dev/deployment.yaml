@@ -19,5 +19,5 @@ spec:
       - name: dace
         image: dimkapro/dace:latest-24
         ports:
-        - containerPort: 8080
+        - containerPort: 6878
           name: tv
